@@ -10,14 +10,7 @@ export const selectProjectsSuccess = createSelector(
 
 export const getProjects = createSelector(
   [selectProjectsSuccess],
-  (projects) => {
-   const result = projects.reduce((acc, project) => {
-      const { projectNumber } = project;
-      acc[projectNumber] = project;
-      return acc;
-    }, {})
-    return result;
-  },
+  (projects) => projects,
 );
 
 export const selectProjectsIsLoading = createSelector(

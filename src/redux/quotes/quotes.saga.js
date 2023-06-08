@@ -6,7 +6,6 @@ import {
   fetchQuoteFailed,
 } from './quotes.actions';
 import { QUOTES_ACTION_TYPES } from './quotes.types';
-import axios from 'axios';
 import { baseUrl } from '../urls';
 
 const url = `${baseUrl}/quotes`

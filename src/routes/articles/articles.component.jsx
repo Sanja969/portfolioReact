@@ -18,14 +18,13 @@ const Articles = () => {
         <ArticlesSubContainer>
 
           {
-          Object.keys(articles).map(articleNumber => {
-            const article = articles[articleNumber]
+          articles.map(article => {
             return (
-            <ArticleContainer key={articleNumber}>
+            <ArticleContainer key={article.id}>
               <h3>
                 {article.title}
               </h3>
-              <small>{article.date}</small>
+              <small>{article.created_at}</small>
               <p>{article.text}</p>
               <a href={article.link}> &gt;&gt; Click here</a>
             </ArticleContainer>

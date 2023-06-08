@@ -18,12 +18,9 @@ const Projects = () => {
         <ProjectSubContainer>
 
           {
-          Object.keys(projects).map(projectNumber => {
-            const project = projects[projectNumber]
-            let base64String = Buffer.from(project.img.data.data).toString('base64');
-            const imgSource = `data:image/png;base64,${base64String}`;
+          projects.map(project => {
             return (
-            <ProjectContainer key={projectNumber}>
+            <ProjectContainer key={project.id}>
               <SubContainer>
                 <h3>
                   {project.name}
@@ -33,7 +30,7 @@ const Projects = () => {
               </SubContainer>
               <SubContainer>
                 <div>
-                  <ImageContainer style={{background: `url(${imgSource})` }}></ImageContainer>
+                  <ImageContainer style={{background: `url(${project.img})` }}></ImageContainer>
                 </div>
 
                 <p>{project.description.slice(0, 100) + "..."}</p>

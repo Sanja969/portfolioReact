@@ -10,14 +10,7 @@ export const selectArticlesSuccess = createSelector(
 
 export const getArticles = createSelector(
   [selectArticlesSuccess],
-  (articles) => {
-   const result = articles.reduce((acc, article) => {
-      const { articleNumber } = article;
-      acc[articleNumber] = article;
-      return acc;
-    }, {})
-    return result;
-  },
+  (articles) => articles,
 );
 
 export const selectArticlesIsLoading = createSelector(

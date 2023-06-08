@@ -19,17 +19,16 @@ const Blogs = () => {
         <BlogsSubContainer>
 
           {
-          Object.keys(blogs).map(blogNumber => {
-            const blog = blogs[blogNumber]
+          blogs.map(blog => {
             return (
               <>
-                <BlogContainer key={blogNumber}>
+                <BlogContainer key={blog.id}>
                 <h3>
                   {blog.title}
                 </h3>
                 <small>{blog.date}</small>
                 <p>{blog.text.slice(0, 100)}...</p>
-                <a  onClick={() => dispatch(getBlog(blog))}>&gt;&gt;More</a>
+                <a onClick={() => dispatch(getBlog(blog))}>&gt;&gt;More</a>
                 </BlogContainer>
                 <Blog />
               </>

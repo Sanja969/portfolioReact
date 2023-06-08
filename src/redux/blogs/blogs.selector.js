@@ -10,14 +10,7 @@ export const selectBlogsSuccess = createSelector(
 
 export const getBlogs = createSelector(
   [selectBlogsSuccess],
-  (blogs) => {
-   const result = blogs.reduce((acc, blog) => {
-      const { blogNumber } = blog;
-      acc[blogNumber] = blog;
-      return acc;
-    }, {})
-    return result;
-  },
+  (blogs) => blogs,
 );
 
 export const selectBlogsIsLoading = createSelector(
