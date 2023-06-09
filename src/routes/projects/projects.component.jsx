@@ -31,7 +31,7 @@ const Projects = () => {
                   <ImageContainer style={{background: `url(${project.img})` }}></ImageContainer>
                 </div>
 
-                <p>{project.description.slice(0, 100) + "..."}</p>
+                <p>{project.description.slice(0, 350) + "..."}</p>
                 <p>{project.technologies}</p>
               </SubContainer>
             </ProjectContainer>
