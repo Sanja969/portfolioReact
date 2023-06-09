@@ -1,4 +1,4 @@
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { ArticlesContainer, ArticlesSubContainer, ArticleContainer } from './articles.styles';
 import { getArticles, selectArticlesIsLoading } from '../../redux/articles/articles.selector';
 import Spinner from '../../components/spinner/spinner.component';

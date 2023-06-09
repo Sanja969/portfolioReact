@@ -23,12 +23,12 @@ const Blogs = () => {
             return (
               <>
                 <BlogContainer key={blog.id}>
-                <h3>
-                  {blog.title}
-                </h3>
-                <small>{blog.date}</small>
-                <p>{blog.text.slice(0, 100)}...</p>
-                <a onClick={() => dispatch(getBlog(blog))}>&gt;&gt;More</a>
+                  <h3>
+                    {blog.title}
+                  </h3>
+                  <small>{blog.date}</small>
+                  <p>{blog.text.slice(0, 100)}...</p>
+                  <button className='ll' onClick={() => dispatch(getBlog(blog))}>&gt;&gt;More</button>
                 </BlogContainer>
                 <Blog />
               </>

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
 const mainColor ='#30fffe';
 const transColor = '#30fffe40';

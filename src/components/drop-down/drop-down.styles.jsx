@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 const mainColor ='#30fffe';
-const transColor = '#30fffe40';
-const transColor2 = '#30fffe20';
 
 export const DropdownContainer = styled.footer`
   position: absolute;

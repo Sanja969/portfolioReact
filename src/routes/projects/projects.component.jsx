@@ -4,8 +4,6 @@ import { getProjects, selectProjectsIsLoading } from '../../redux/projects/proje
 import Spinner from '../../components/spinner/spinner.component';
 import Footer from '../../components/footer/footer.component';
 
-const Buffer = require('buffer/').Buffer
-
 const Projects = () => {
   const projects = useSelector(getProjects);
   const isLoader = useSelector(selectProjectsIsLoading); 

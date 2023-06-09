@@ -1,7 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 
 const mainColor ='#30fffe';
-const transColor = '#30fffe40';
 const transColor2 = '#30fffe20';
 
 const move = keyframes`
@@ -97,7 +96,7 @@ export const BlogContainer = styled.div`
     font-size: 18px;
     text-shadow: 0 0 4px rgba(172,249,251,0.65);
   }
-  a {
+  .ll {
     margin-top: 10px;
     color: green;
   }

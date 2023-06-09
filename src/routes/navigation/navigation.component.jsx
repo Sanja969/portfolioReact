@@ -29,7 +29,7 @@ const Navigation = () => {
             <a href= "https://twitter.com/SanjaMandic42">Twitter</a>
           </NavLinks>
           <HamburgerContainer onClick={() => dispatch(triggerMenu())}>
-            <img src="https://s3.amazonaws.com/www-inside-design/uploads/2019/03/hamburgerheader-768x768.jpg" />
+            <img src="https://s3.amazonaws.com/www-inside-design/uploads/2019/03/hamburgerheader-768x768.jpg" alt='sanja-mandic' />
           </HamburgerContainer>
         </NavSub>
         <Dropdown />

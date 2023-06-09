@@ -20,7 +20,7 @@ const App = () => {
     dispatch(fetchProjectsStart());
     dispatch(fetchBlogsStart());
     dispatch(fetchArticlesStart());
-  }, []);
+  }, [dispatch]);
 
   return (
     <>
