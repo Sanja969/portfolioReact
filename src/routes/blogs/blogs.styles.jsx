@@ -99,5 +99,6 @@ export const BlogContainer = styled.div`
   .ll {
     margin-top: 10px;
     color: green;
+    background-color: none !important;
   }
 `;

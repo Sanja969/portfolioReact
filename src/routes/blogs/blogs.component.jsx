@@ -28,7 +28,7 @@ const Blogs = () => {
                   </h3>
                   <small>{blog.date}</small>
                   <p>{blog.text.slice(0, 100)}...</p>
-                  <button className='ll' onClick={() => dispatch(getBlog(blog))}>&gt;&gt;More</button>
+                  <div className='ll' onClick={() => dispatch(getBlog(blog))}>&gt;&gt;More</div>
                 </BlogContainer>
                 <Blog />
               </>
