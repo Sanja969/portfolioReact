@@ -4,7 +4,7 @@ import { LinksContainer, HeadLineContainer, HomeContainer } from './home.styles'
 import StarLink from '../../components/link/link.component';
 import theme from '../../assets/load_link.mp3';
 import Typewriter from "typewriter-effect";
-import profile from '../../assets/new1.png'
+import profile from '../../assets/test2.jpg'
 
 const Home = () => {
   const quote = localStorage.getItem('quote');
