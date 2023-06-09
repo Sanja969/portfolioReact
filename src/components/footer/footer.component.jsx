@@ -1,23 +1,20 @@
 import { FooterContainer } from "./footer.styles";
 import Typewriter from "typewriter-effect";
+import astro from "../../assets/ff.png";
 
 const Footer = () => {
   return (
     <FooterContainer>
-      <Typewriter
-        
-        onInit={(typewriter)=> {
 
-        typewriter
-        
-        .typeString("Visit my repositories on GitHub ")
-        .pauseFor(1000)
-        .typeString("and check for all my publiced projects.")
-        .start()
-        }}
-        />
-        <a href="https://github.com/Sanja969?tab=repositories">&gt;&gt; Repo</a>
-        <h6>Copyright @Sanja969</h6>
+        <p>Please check out my GitHub profile for more information about a public project I have worked on:</p>
+          <a href="https://github.com/Sanja969?tab=repositories">
+            <img
+              style={{borderRadius: '150px', backgroundColor: 'transparent'}}
+              src='https://freepngimg.com/save/21409-scarlet-witch-image/1024x1033'
+              alt="an astronaut" 
+              width={70} />
+          </a>
+      <h6>Copyright @Sanja969</h6>
     </FooterContainer>
   )
 }

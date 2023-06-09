@@ -15,7 +15,6 @@ export const FooterContainer = styled.footer`
   top: auto;
   margin-top: 50px;
   width: 100%;
-  height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,14 +22,25 @@ export const FooterContainer = styled.footer`
   align-items: center;
   text-align: center;
   z-index: 0;
+  background-color: rgba(0, 0, 0, 0.326);
+  padding-top: 10px;
   a {
     display: block;
-    background-color: green;
     padding: 5px;
     animation: ${shine} 1s;
     margin: 10px;
   }
   h6 {
-    padding: 15px;
+    padding-bottom: 15px;
+    color: white;
+  }
+  p {
+    color: white;
+    font-size: 15px;
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
