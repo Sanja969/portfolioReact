@@ -112,14 +112,17 @@ export const SubContainer = styled.div`
       }
     }
     &:nth-child(2) {
-      padding: 0;
+
       text-align: center;
       height: 340px;
       border-bottom: 1px solid ${mainColor};
       flex-direction: column;
+      @media (max-width: 600px) {
+        height: 400px;
+      }
 
       p {
-        padding: 0 20px;
+        padding: 10px 20px;
         height: 50px:
         overflow: hidden;
         text-shadow: 0 0 4px rgba(172,249,251,0.65);
